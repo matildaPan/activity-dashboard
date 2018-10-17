@@ -6,7 +6,6 @@ import { ActivityFeed } from './components/activity-feed.component'
 
 export class ActivityFeedContainer extends React.Component {
 
-
   render() {
     const feeds = this.props.activityFeed.feeds.map(f => (<ActivityFeed feed={f} />));
 

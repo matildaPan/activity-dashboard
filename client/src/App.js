@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import {dataFetchRequest} from './App.action'
 import ActivityFeedContainer from './activity-feed/activity-feed.container';
-
+import TaskContainer from './task/task.container';
 class App extends React.Component {
 
   componentDidMount(){
@@ -12,7 +12,8 @@ class App extends React.Component {
   
   render() {
     return (
-      <ActivityFeedContainer />
+      // <ActivityFeedContainer />
+      <TaskContainer id={6441} />
     )
   }
 }
