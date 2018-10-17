@@ -1,7 +1,7 @@
 const express = require('express');
 var cors = require('cors')
-const app = express(cors());
-const port = 3000;
+const app = express();
+const port = 3300;
 
 var fs = require("fs");
 
@@ -21,6 +21,8 @@ function getData(file){
 }
 
 const data = getData('activity_feed.json');
+
+app.use(cors());
 
 app.get('/', (req, res) => res.send(data));
 
