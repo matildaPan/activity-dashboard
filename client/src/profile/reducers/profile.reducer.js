@@ -27,3 +27,10 @@ export const profileReducer = (state = initProfileState, action) => {
   }
 }
 
+
+export const profileStateSelector = state => state.profile;
+
+export const singleProfileSelector = (profileId) => createSelector(
+  profileStateSelector,
+  profileState => profileState.byId[profileId] || {}
+)
