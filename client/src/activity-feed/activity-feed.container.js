@@ -1,11 +1,10 @@
 import * as React from 'react';
 import { connect } from 'react-redux';
-// import { bindActionCreators } from 'redux';
 import TaskContainer from '../task/task.container';
 import ProfileContainer from '../profile/profile.container';
 import {activityFeedStateSelector} from './reducers/activity-feed.reducer';
 import {parse} from '../common/templateParser';
-import {ActivityFeed} from './components/activity-feed.component';
+import {SingleFeed} from './components/single-feed.component';
 
 export class ActivityFeedContainer extends React.Component {
 
@@ -33,7 +32,7 @@ export class ActivityFeedContainer extends React.Component {
       }
     );
 
-    const feedComponets = results.map((x, i) => (<ActivityFeed data={x} key={i}/>));
+    const feedComponets = results.map((x, i) => (<SingleFeed data={x} key={i}/>));
 
     return (
       <div>

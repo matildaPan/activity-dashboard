@@ -28,11 +28,3 @@ export const activityFeedReducer = (state=initActivityFeedState, action) => {
 }
 
 export const activityFeedStateSelector = state => state.activityFeed;
-// export const activityFeedsListSelector = createSelector(
-//   activityFeedStateSelector,
-//   feedState =>  feedState.allIds.map(x => feedState.byId[x])
-// )
-// export const activityFeedSelector = (feedId) => createSelector(
-//   activityFeedStateSelector,
-//   feedState => feedState.byId[feedId]
-// )

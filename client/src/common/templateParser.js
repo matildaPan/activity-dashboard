@@ -11,6 +11,6 @@ export const parse = (patternComponentMap, template) => {
   let splitedTemplate = replacedTemplate.split(delimiter);
   splitedTemplate = splitedTemplate.filter(x => x && x !== '');
 
-  const result = splitedTemplate.map(x => patternComponentMap[x] || x);
+  const result = splitedTemplate.map(x => patternComponentMap[x] || x.toUpperCase());
   return result;
 }

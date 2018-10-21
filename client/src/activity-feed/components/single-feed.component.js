@@ -1,15 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import './single-feed.css';
 
-export const ActivityFeed = ({
+export const SingleFeed = ({
   data
 }) => {
   return (
-    <div>{data}</div>
+    <div className="single-feed">{data}</div>
   )
 
 }
 
-ActivityFeed.propTypes = {
+SingleFeed.propTypes = {
   data: PropTypes.array.isRequired
 }
