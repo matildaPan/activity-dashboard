@@ -2,14 +2,14 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 export const ActivityFeed = ({
-  feed
+  data
 }) => {
   return (
-    <div>{feed.template}</div>
+    <div>{data}</div>
   )
 
 }
 
 ActivityFeed.propTypes = {
-  feed: PropTypes.object.isRequired
+  data: PropTypes.array.isRequired
 }

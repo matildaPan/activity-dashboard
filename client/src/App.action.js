@@ -12,6 +12,7 @@ export const dataFetchRequest = () => {
     )
     .then(
       (data) => {
+        console.log('DISPATCH...');
         dispatch(activityFeedFetchSuccess(data.activity_feed));
         dispatch(profileFetchSuccess(data.profiles));
         dispatch(taskFetchSuccess(data.tasks));
