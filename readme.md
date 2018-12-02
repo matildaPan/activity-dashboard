@@ -27,5 +27,4 @@ $ cd client
 $ npm test
 ```
 
-remote commit
-local commit
+local commit##
